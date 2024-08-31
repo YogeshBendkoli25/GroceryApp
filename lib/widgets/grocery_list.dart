@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:groceryapp/data/categories.dart';
 import 'package:groceryapp/model/grocery_item.dart';
@@ -30,7 +29,7 @@ class _GroceryListState extends State<GroceryList> {
   ///   GET Request //
   void _loadItems() async {
     final url = Uri.https(
-        'flutter-1fb07-default-rtdb.firebaseio.com', 'shopping-list.json');
+        'flutter-1fb07-default-rtdb.firebaseio.com','shopping-list.json');
 
     try {
       final response = await http.get(url);
