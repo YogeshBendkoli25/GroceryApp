@@ -1,6 +1,3 @@
-
-
-
 import 'package:groceryapp/model/category.dart';
 
 class GroceryItem{
