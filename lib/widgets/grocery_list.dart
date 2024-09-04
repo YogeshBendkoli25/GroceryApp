@@ -29,7 +29,7 @@ class _GroceryListState extends State<GroceryList> {
   ///   GET Request //
   void _loadItems() async {
     final url = Uri.https(
-        'flutter-1fb07-default-rtdb.firebaseio.com','shopping-list.json');
+        'grocery-list-de078-default-rtdb.firebaseio.com','shopping-list.json');
 
     try {
       final response = await http.get(url);
@@ -95,7 +95,7 @@ class _GroceryListState extends State<GroceryList> {
       _groceryItems.remove(item);
     });
 
-    final url = Uri.https('flutter-1fb07-default-rtdb.firebaseio.com',
+    final url = Uri.https('grocery-list-de078-default-rtdb.firebaseio.com',
         'shopping-list/${item.id}.json');
 
     final response = await http.delete(url);
@@ -115,7 +115,7 @@ class _GroceryListState extends State<GroceryList> {
       content = const Center(child: CircularProgressIndicator());
     }
 
-    if (_groceryItems.isEmpty) {
+    else if (_groceryItems.isEmpty) {
       content = const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

@@ -24,10 +24,10 @@ class _NewItemState extends State<NewItem> {
      _formKey.currentState!.save();
       setState(() {
         _isSending = true;
-      });
+      });   
 
      final url = Uri.https(
-      'flutter-1fb07-default-rtdb.firebaseio.com','shopping-list.json');
+      'grocery-list-de078-default-rtdb.firebaseio.com','shopping-list.json');
      final response = await http.post(
       url,
       headers: {
@@ -48,7 +48,18 @@ class _NewItemState extends State<NewItem> {
       }
       
      //response.statusCode == 200;
-     
+      if (resData == null || resData['name'] == null) {
+      // Handle the error when resData['name'] is null
+      setState(() {
+        _isSending = false;
+      });
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Failed to add item. Please try again.')),
+      );
+      return;
+    }
+
+
        Navigator.of(context).pop(
       GroceryItem(
       id: resData['name'],
@@ -63,7 +74,7 @@ class _NewItemState extends State<NewItem> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(  
       appBar: AppBar(
         title: const Text('Add a new item'),
       ),
@@ -135,6 +146,7 @@ class _NewItemState extends State<NewItem> {
                     onChanged: (value) {
                       setState(() {
                         _selectedCategory = value!;
+                        print('hit it');
 
                       });
                     }),
