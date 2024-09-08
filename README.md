@@ -16,7 +16,7 @@ The Grocery List App is a simple yet powerful Flutter application designed to he
 ## Screenshots
 
 ![1](https://github.com/user-attachments/assets/ada9e916-9615-4be2-8735-83a09a6b9674)
-![2](https://github.com/user-attachments/assets/7ccae915-7dc6-477e-85b2-16947caa6b51)!
+![2](https://github.com/user-attachments/assets/7ccae915-7dc6-477e-85b2-16947caa6b51)
 [1](https://github.com/user-attachments/assets/89add024-53a0-4936-ba4e-84ee789b03bd)
 
 
