@@ -14,9 +14,9 @@ The Grocery List App is a simple yet powerful Flutter application designed to he
 - HTTP API: The app uses HTTP methods to perform CRUD operations with Firebase.
 
 ## Screenshots
+![Grocery List   AddItem](https://github.com/user-attachments/assets/e7503347-6972-458d-8041-ba6a3421fea5)
 
-![1](https://github.com/user-attachments/assets/ada9e916-9615-4be2-8735-83a09a6b9674)
-![2](https://github.com/user-attachments/assets/7ccae915-7dc6-477e-85b2-16947caa6b51)
-[1](https://github.com/user-attachments/assets/89add024-53a0-4936-ba4e-84ee789b03bd)
+![Add Item Category   Items Lists](https://github.com/user-attachments/assets/7bd82433-b0fd-4b5f-a3e0-650cf01084ed)
 
+![Remove item](https://github.com/user-attachments/assets/5356c5ee-2bbc-4866-b365-2d6b0e0b18d7)
 
